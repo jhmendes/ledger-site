@@ -26,8 +26,19 @@ p {
 
 /* Utility Classes */
 
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
 .text-primary {
     color: var(--primary-color);
+}
+
+.text-center {
+    text-align: center;
 }
 
 .l-heading {
@@ -36,10 +47,20 @@ p {
     line-height: 1.1;
 }
 
+.m-heading {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+}
+
 .lead {
     font-size: 1.3rem;
     margin-bottom: 2rem;
 }
+
+.py-1 {padding: 1.5rem 0;}
+.py-2 {padding: 2rem 0;}
+.py-3 {padding: 3rem 0;}
 
 .btn {
     display: inline-block;
@@ -111,5 +132,28 @@ p {
     position: absolute;
     top: 60px;
     left: 0;
+    right: 0;
+    bottom: 0;
     background-color: rgba(0,0,0,0.4);
+}
+
+/* What we do */
+
+.items {
+    display: flex;
+    padding: 1rem;
+}
+
+.item {
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+}
+
+#what .items .item i {
+    background: var(--primary-color);
+    padding: 1rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+
 }
