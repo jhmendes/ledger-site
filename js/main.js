@@ -16,7 +16,7 @@ window.addEventListener('scroll', function(){
   }
 });
 
-$('#navbar a, .btn').on('click', function(){
+$('#navbar a').on('click', function(){
   if (this.hash !== '') {
     event.preventDefault();
 
